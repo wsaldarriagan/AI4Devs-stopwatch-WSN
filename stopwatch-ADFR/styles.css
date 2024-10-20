@@ -1,0 +1,129 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Page structure */
+.hidden {
+    display: none;
+}
+
+#main-page, #stopwatch-page, #countdown-page {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Stopwatch and Countdown Button Styles */
+#stopwatch-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#countdown-btn {
+    background-color: #F44336;
+    color: white;
+}
+
+#back-to-main-from-stopwatch, #back-to-main-from-countdown {
+    background-color: #555;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Stopwatch Display */
+.display {
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#stopwatch-display, #countdown-display {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+#milliseconds, #milliseconds-countdown {
+    font-size: 24px;
+    color: #888;
+}
+
+/* Action buttons */
+.buttons button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#reset-stopwatch, #reset-countdown {
+    background-color: #F44336;
+}
+
+/* Countdown Digit Buttons */
+.number-buttons button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #eee;
+    font-size: 24px;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.number-buttons button:hover {
+    background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #main-page, #stopwatch-page, #countdown-page {
+        width: 100%;
+        max-width: 90%;
+    }
+    
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .number-buttons button {
+        width: 20%;
+        height: 60px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stopwatch & Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main page to select Stopwatch or Countdown -->
+    <div id="main-page">
+        <h1>Select Timer Type</h1>
+        <button id="stopwatch-btn">Stopwatch</button>
+        <button id="countdown-btn">Countdown</button>
+    </div>
+
+    <!-- Stopwatch page -->
+    <div id="stopwatch-page" class="hidden">
+        <div class="display">
+            <div id="stopwatch-display">00:00:00</div>
+            <div id="milliseconds">000</div>
+        </div>
+        <div class="buttons">
+            <button id="start-stopwatch">Start</button>
+            <button id="reset-stopwatch">Reset</button>
+        </div>
+        <button id="back-to-main-from-stopwatch">Back</button>
+    </div>
+
+    <!-- Countdown page -->
+    <div id="countdown-page" class="hidden">
+      <div class="countdown-display">
+          <h1 id="countdown-display">00:00:00</h1>
+          <p id="milliseconds-countdown">000</p>
+      </div>
+      
+      <!-- Number input buttons for countdown -->
+      <div class="number-buttons">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>0</button>
+      </div>
+  
+      <!-- Button to set the countdown -->
+      <button id="set-countdown">Set</button>
+      
+      <!-- Countdown control (start, reset) -->
+      <div id="countdown-control" class="hidden">
+          <button id="start-countdown">Start</button>
+          <button id="reset-countdown">Reset</button>
+      </div>
+      
+      <!-- Back button to go back to main -->
+      <button id="back-to-main-from-countdown">Back</button>
+  </div>
+  
+
+    <script src="script.js"></script>
+
+</body>
+</html>
