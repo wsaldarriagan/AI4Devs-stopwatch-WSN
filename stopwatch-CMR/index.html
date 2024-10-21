@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch & Countdown</title>
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div id="mode-selection" class="text-center space-y-4">
+      <h1 class="text-2xl font-bold">Choose Mode</h1>
+      <button
+        id="stopwatch-btn"
+        class="bg-green-500 text-white py-2 px-4 rounded"
+      >
+        Stopwatch
+      </button>
+      <button
+        id="countdown-btn"
+        class="bg-blue-500 text-white py-2 px-4 rounded"
+      >
+        Countdown
+      </button>
+    </div>
+
+    <!-- Stopwatch View -->
+    <div id="stopwatch-view" class="hidden">
+      <div class="flex justify-between items-center">
+        <button id="back-stopwatch" class="text-blue-500 text-2xl">
+          &#8592; Back
+        </button>
+      </div>
+      <div class="text-center">
+        <div id="stopwatch-display" class="text-6xl py-4">00:00:00</div>
+        <div id="stopwatch-milliseconds" class="text-sm py-1">000</div>
+        <div class="space-x-4">
+          <button
+            id="start-stopwatch"
+            class="bg-green-500 text-white py-2 px-4 rounded"
+          >
+            Start
+          </button>
+          <button
+            id="clear-stopwatch"
+            class="bg-red-500 text-white py-2 px-4 rounded"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Countdown Setup View -->
+    <div id="countdown-setup-view" class="hidden">
+      <div class="flex justify-between items-center">
+        <button id="back-countdown-setup" class="text-blue-500 text-2xl">
+          &#8592; Back
+        </button>
+      </div>
+      <div class="text-center">
+        <div id="countdown-input-display" class="text-6xl py-4">00:00:00</div>
+        <div class="grid grid-cols-3 gap-4 text-2xl">
+          <!-- Buttons 0 to 9 -->
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="1"
+          >
+            1
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="2"
+          >
+            2
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="3"
+          >
+            3
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="4"
+          >
+            4
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="5"
+          >
+            5
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="6"
+          >
+            6
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="7"
+          >
+            7
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="8"
+          >
+            8
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="9"
+          >
+            9
+          </button>
+          <button
+            class="countdown-num bg-gray-200 py-2 px-4 rounded"
+            data-value="0"
+          >
+            0
+          </button>
+        </div>
+        <div class="space-x-4 mt-4">
+          <button
+            id="set-countdown"
+            class="bg-blue-500 text-white py-2 px-4 rounded"
+          >
+            Set
+          </button>
+          <button
+            id="clear-countdown-input"
+            class="bg-red-500 text-white py-2 px-4 rounded"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Countdown View -->
+    <div id="countdown-view" class="hidden">
+      <div class="flex justify-between items-center">
+        <button id="back-countdown" class="text-blue-500 text-2xl">
+          &#8592; Back
+        </button>
+      </div>
+      <div class="text-center">
+        <div id="countdown-display" class="text-6xl py-4">00:00:00</div>
+        <div id="countdown-milliseconds" class="text-sm py-1">000</div>
+        <div class="space-x-4">
+          <button
+            id="start-countdown"
+            class="bg-green-500 text-white py-2 px-4 rounded"
+          >
+            Start
+          </button>
+          <button
+            id="clear-countdown"
+            class="bg-red-500 text-white py-2 px-4 rounded"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
