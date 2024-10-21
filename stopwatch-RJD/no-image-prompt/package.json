@@ -1,0 +1,16 @@
+{
+  "name": "stopwatch-rjd",
+  "version": "1.0.0",
+  "description": "This project is a simple web-based stopwatch built with **HTML**, **CSS**, and **JavaScript**. It displays time in the format HH:MM:SS along with **milliseconds**. The project includes **Start/Stop** and **Clear** buttons, with the Start button changing color when active. The layout is carefully designed to align the elements properly without overlap.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
