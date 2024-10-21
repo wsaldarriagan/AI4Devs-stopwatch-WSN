@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro Personalizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: indianred; /* Color base */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="text-center w-full h-full flex flex-col justify-center items-center p-4">
+        <div id="display" class="text-white text-5xl md:text-9xl mb-10">00:00:00</div>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <button id="start" class="bg-white text-indianred text-xl md:text-2xl px-6 md:px-8 py-2 md:py-4 rounded-lg shadow hover:bg-gray-200 transition">Iniciar</button>
+            <button id="clear" class="bg-white text-indianred text-xl md:text-2xl px-6 md:px-8 py-2 md:py-4 rounded-lg shadow hover:bg-gray-200 transition">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
