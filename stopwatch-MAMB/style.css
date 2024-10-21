@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.mode-selection {
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.mode-btn:hover {
+  background-color: #0056b3;
+}
+
+.timer {
+  margin: 20px 0;
+}
+
+.display {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.number-btn {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.number-btn:hover {
+  background-color: #0056b3;
+}
+
+.control-btn {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+  background-color: #218838;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .display {
+      font-size: 1.5em;
+  }
+}
