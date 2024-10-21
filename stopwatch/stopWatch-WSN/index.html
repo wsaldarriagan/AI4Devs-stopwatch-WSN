@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Cuenta Regresiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronómetro y Cuenta Regresiva</h1>
+        
+        <div class="mode-selection">
+            <button id="cronometro-btn" class="mode-btn active">Cronómetro</button>
+            <button id="cuenta-regresiva-btn" class="mode-btn inactive">Cuenta Regresiva</button>
+        </div>
+
+        <div id="cronometro" class="mode">
+            <div id="cronometro-display">00:00:00</div>
+            <button id="cronometro-start-pause" class="action-btn green">Iniciar</button>
+            <button id="cronometro-reset" class="action-btn red">Reiniciar</button>
+        </div>
+
+        <div id="cuenta-regresiva" class="mode" style="display: none;">
+            <div>
+                <input type="number" id="minutos-input" placeholder="Minutos" min="0" class="time-input">
+                <input type="number" id="segundos-input" placeholder="Segundos" min="0" class="time-input">
+            </div>
+            <div id="cuenta-regresiva-display">00:00</div>
+            <button id="cuenta-regresiva-start-pause" class="action-btn green">Iniciar</button>
+            <button id="cuenta-regresiva-reset" class="action-btn red">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
